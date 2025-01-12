@@ -6,3 +6,22 @@ def identity(n):
         matrix[i][i] = 1
 
     return matrix
+
+# 2
+def every_other_column(m, n):
+    matrix = [[0 for _ in range(n)] for _ in range(m)]
+
+    count = 1
+
+    for col in range(0, n, 2):
+        for row in range(m):
+            matrix[row][col] = count
+            count +=1
+
+    return matrix
+
+# 3
+import numpy as np
+
+def identity_np(n):
+    return np.eye(n, dtype=int)
