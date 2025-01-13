@@ -1,4 +1,8 @@
-# 1
+import numpy as np
+
+def identity_np(n):
+    return np.eye(n, dtype=int)
+
 def identity(n):
     matrix = [[0 for _ in range(n)] for _ in range(n)]
 
@@ -7,7 +11,6 @@ def identity(n):
 
     return matrix
 
-# 2
 def every_other_column(m, n):
     matrix = [[0 for _ in range(n)] for _ in range(m)]
 
@@ -19,9 +22,3 @@ def every_other_column(m, n):
             count +=1
 
     return matrix
-
-# 3
-import numpy as np
-
-def identity_np(n):
-    return np.eye(n, dtype=int)
