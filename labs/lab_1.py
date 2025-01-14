@@ -128,18 +128,18 @@ linear_search([1, 2, 3, 4, 5, 6, 7, 8, 9], 7)
 
 # 9
 def binary_search(li, num):
-    low = 0
-    high = len(li) - 1
+    left = 0
+    right = len(li) - 1
 
-    while low <= high:
+    while left<= right:
 
-        mid = (high + low) // 2
+        mid = (right+ left) // 2
 
         if li[mid] < num:
-            low = mid + 1
+            left= mid + 1
 
         elif li[mid] > num:
-            high = mid - 1
+            right= mid - 1
 
         else:
             print(True)
