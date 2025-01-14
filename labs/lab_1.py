@@ -91,7 +91,7 @@ def largest_so_far(li):
     return count
 
 
-print(6)
+print('P6')
 largest_so_far([10, 8, 9, 9, 13, 16, 12])
 
 
