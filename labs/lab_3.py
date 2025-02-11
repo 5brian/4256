@@ -1,6 +1,5 @@
 import math
 
-
 # 1
 def grades(di):
     result = {}

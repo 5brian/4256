@@ -28,7 +28,6 @@ def matches_helper():
                 used += 1
             else:
                 return used
-    return used
 
 def die_rolls(trials):
     results = {}
@@ -46,7 +45,7 @@ def die_rolls_2(trials, n):
     for i in range(n, (6 * n) + 1):
         results[i] = 0
     for _ in range(trials):
-        total = sum(numpy.random.randint(1, 7) for i in range(n))
+        total = sum(numpy.random.randint(1, 7) for _ in range(n))
         results[total] += 1
     for key in results:
         results[key] = round((results[key] / trials) * 100, 1)
